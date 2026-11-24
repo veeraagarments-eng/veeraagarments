@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "DM Serif Display", Georgia, "Times New Roman", serif;
+  --color-forest: #263d30;
+  --color-forest-deep: #1b2c23;
+  --color-sage: #71816a;
+  --color-beige: #e9e2d3;
+  --color-ivory: #faf9f5;
+  --color-charcoal: #292b26;
+  --color-clay: #7a3e36;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #faf9f5;
+  color: #292b26;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+html,
+body,
+#root {
+  overflow-x: clip;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+::selection {
+  background: #263d30;
+  color: #faf9f5;
+}
+
+:focus-visible {
+  outline: 2px solid #263d30;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: 0;
+  z-index: 80;
+  transform: translateY(-150%);
+  background: #faf9f5;
+  color: #263d30;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  transform: translateY(0.75rem);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #292b26;
+  transition: background-color 9999s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

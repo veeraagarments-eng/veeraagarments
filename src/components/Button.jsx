@@ -3,7 +3,9 @@ import cx from "../utils/cx.js";
 
 const variants = {
   solid:
-    "bg-forest text-ivory hover:bg-forest-deep focus-visible:outline-forest",
+    "rounded-lg bg-orange text-white hover:bg-orange-deep focus-visible:outline-orange",
+  orange:
+    "rounded-lg bg-orange text-white hover:bg-orange-deep focus-visible:outline-orange",
   ivory:
     "bg-ivory text-forest hover:bg-beige focus-visible:outline-ivory",
   beige:

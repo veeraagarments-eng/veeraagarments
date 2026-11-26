@@ -1,25 +1,21 @@
 import Seo from "../components/Seo.jsx";
-import PageHero from "../components/PageHero.jsx";
-import Products from "../components/Products.jsx";
-import EnquiryBand from "../components/EnquiryBand.jsx";
-import images from "../data/assets.js";
+import PageBanner from "../components/PageBanner.jsx";
+import ProductGrid from "../components/ProductGrid.jsx";
+import CtaBand from "../components/CtaBand.jsx";
 
 export default function ProductsPage() {
   return (
     <>
       <Seo
         title="Products | VEERAA GARMENTS"
-        description="Explore cotton tote bags, canvas bags, shopping bags, promotional bags, custom printed bags and other fabric bags manufactured by VEERAA Garments."
+        description="Cotton tote bags, canvas bags, shopping bags, promotional bags and custom printed fabric bags manufactured by VEERAA GARMENTS in Erode."
       />
-      <PageHero
-        eyebrow="Collection"
+      <PageBanner
         title="Products"
-        lede="Fabric bags for corporate, wholesale, retail, promotional and export programmes."
-        image={images.products.canvasBag}
-        imageAlt="Placeholder photograph of a canvas bag"
+        lede="A manufacturing catalogue for wholesale and custom fabric bag programmes. Prices are shared on enquiry."
       />
-      <Products />
-      <EnquiryBand />
+      <ProductGrid showHeading={false} />
+      <CtaBand />
     </>
   );
 }

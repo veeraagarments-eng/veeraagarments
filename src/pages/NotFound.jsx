@@ -17,8 +17,8 @@ export default function NotFound() {
             The address may have changed. Return to the homepage to explore our fabric bags and manufacturing.
           </p>
           <Link
-            to="/#home"
-            className="mt-8 inline-flex min-h-12 items-center bg-ivory px-6 text-xs font-semibold uppercase tracking-[0.14em] text-forest"
+            to="/"
+            className="mt-8 inline-flex min-h-12 items-center rounded-lg bg-orange px-6 text-xs font-semibold uppercase tracking-[0.14em] text-white"
           >
             Back to Home
           </Link>
